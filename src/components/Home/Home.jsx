@@ -1,7 +1,34 @@
+import snipeMedia from "../../../public/media.mp4";
+// import snipeDownwardIcon from "../..assets/downward.svg";
+
 export const Home = () => {
   return (
     <>
-      <header className="fixed-top">
+      <div className="relative flex justify-center text-white bg-gray-900 items -center min-h-screen-col">
+        <video
+          className="w-full h-auto "
+          src={snipeMedia}
+          autoPlay
+          playsInline
+          loop
+        />
+        <div className="absolute text-center transform -translate-x-1/2 translate-y-1/2 top-1/2 left-1/2">
+          <h1 className="mb-8 text-4xl font-bold text-center">
+            Unlock the Power of Out-of-Home Advertising: Explore, Connect, and
+            Grow Your Brand with Our OOH Marketplace.
+          </h1>
+          {/* Button */}
+          <button
+            className="px-5 py-2 text-white uppercase rounded-full bg--500 font-blod"
+            style={{ backgroundColor: "#FC1481" }}
+          >
+            See Our Screens
+          </button>
+          {/* Downward icon below the button */}
+          {/* {snipeDownwardIcon} */}
+        </div>
+      </div>
+      {/* <header className="fixed-top">
         <div>
           <div>
             <div>
@@ -25,7 +52,7 @@ export const Home = () => {
             alt=""
           />
         </div>
-      </section>
+      </section> */}
     </>
   );
 };

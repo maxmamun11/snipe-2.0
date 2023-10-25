@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="py-6 text-white bg-gray-900">
       <div className="container flex flex-wrap mx-auto">
-      {/* The  */}
+        {/* The  */}
         <div className="w-full mb-4 sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3">
           <h2 className="mb-2 text-lg font-bold">Contact</h2>
           <p>
@@ -26,13 +26,9 @@ export default function Footer() {
             Selangor, Malaysia
           </p>
         </div>
-        <div className="w-full mb-4 sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3">
+        <div className="w-full mb-4 sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 ">
           {/* <h2>Snipeads</h2> */}
-          <img
-            src={snipeLogo}
-            alt="logo"
-            className="bottom-0 right-0 object-position:"
-          />
+          <img src={snipeLogo} alt="logo" className="" />
         </div>
       </div>
 
@@ -44,7 +40,8 @@ export default function Footer() {
             {""}
             snipeads
           </a>
-          . All Rights Reserved.
+          {/* Copyright © 2023 Tractive Sdn Bhd. All rights reserved. */}. All
+          Rights Reserved.
         </span>
       </div>
     </footer>
