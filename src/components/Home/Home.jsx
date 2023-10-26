@@ -1,10 +1,21 @@
 import snipeMedia from "../../../public/media.mp4";
+import backgroundImage from "../../assets/backgroundimg.png";
+import BlogSectionCard from "../Card/Card";
 // import snipeDownwardIcon from "../..assets/downward.svg";
+
+const stats = [
+  { id: 1, name: "Screen", value: "100%" },
+  { id: 2, name: "Viewer per day", value: "24/7" },
+  { id: 3, name: "Campaign per year", value: "100k" },
+];
 
 export const Home = () => {
   return (
     <>
-      <div className="relative flex justify-center text-white bg-gray-900 items -center min-h-screen-col">
+      <div
+        className="relative flex justify-center text-white bg-gray-900 items -center min-h-screen-col"
+        style={{ backgroundImage: { backgroundImage } }}
+      >
         <video
           className="w-full h-auto "
           src={snipeMedia}
@@ -19,7 +30,7 @@ export const Home = () => {
           </h1>
           {/* Button */}
           <button
-            className="px-5 py-2 text-white uppercase rounded-full bg--500 font-blod"
+            className="px-20 py-3 text-white uppercase rounded-lg bg--500 font-blod"
             style={{ backgroundColor: "#FC1481" }}
           >
             See Our Screens
@@ -28,31 +39,49 @@ export const Home = () => {
           {/* {snipeDownwardIcon} */}
         </div>
       </div>
-      {/* <header className="fixed-top">
-        <div>
-          <div>
-            <div>
-              <ul className="flex justify-center gap-20">
-                <li>Sales</li>
-                <li>Campaigns</li>
-                <li>logo</li>
-                <li>Screens</li>
-                <li>Networks</li>
-                <li>Sales</li>
-              </ul>
+      <section></section>
+      <section>
+        <div className="text-center text-white bg-purple-950">
+          <h1 className="text-3xl ">
+            Reach your Customers thanks to the largest network
+          </h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Repellendus repellat laudantium.
+          </p>
+          <div className="py-20 bg-purple-500 sm:py-32">
+            <div className="px-6 max-auto max-w-7xl lg:px-8">
+              <dl className="grid grid-cols-1 text-center gap-x-8 gap-y-16 lg:grid-cols-3">
+                {stats.map((stat) => (
+                  <div
+                    key={stat.id}
+                    className="flex-col max-w-xs mx-auto gap-y-4"
+                  >
+                    <dt>{stat.name}</dt>
+                    <dd>{stat.value}</dd>
+                  </div>
+                ))}
+              </dl>
             </div>
-            <div></div>
           </div>
         </div>
-      </header>
+      </section>
       <section>
-        <div>
-          <img
-            src="https://media.geeksforgeeks.org/wp-content/uploads/20221105184949/ezgif.com-gif-maker.mp4"
-            alt=""
-          />
+        <div className="text-center text-white bg-purple-950">
+          <h1 className="text-3xl ">Reviews</h1>
+          <p>
+            Discover our news! The latest special events and social campaigns,
+            new screen locations and current news from the life of Screen
+            Network
+          </p>
         </div>
-      </section> */}
+
+        <div className="flex gap-10 mx-10 mt-10">
+          <BlogSectionCard />
+          <BlogSectionCard />
+          <BlogSectionCard />
+        </div>
+      </section>
     </>
   );
 };

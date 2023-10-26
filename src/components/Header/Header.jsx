@@ -15,13 +15,13 @@ export default function Header() {
           <div className="flex items-center lg:order-2">
             <Link
               to="#"
-              className="text-white hover:bg-white focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none  hover:text-black"
+              className="text-white hover:bg-white focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none  hover:text-black"
             >
               Login
             </Link>
             <Link
               to="#"
-              className="text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none  hover:text-black"
+              className="text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none  hover:text-black"
             >
               Register
             </Link>
@@ -33,18 +33,67 @@ export default function Header() {
             <ul className="flex flex-col font-medium mt4 lg:flex-row lg:space-x-8 lg:mt-0">
               <li>
                 <NavLink
-                  to="/"
-                  // eslint-disable-next-line no-unused-vars
+                  to="/home"
                   className={({ isActive }) =>
                     ` text-white block 
-                    ${isActive ? "hover:text-green-700" : "hover:bg-green-500"}
+                    ${isActive ? "hover:text-white" : " hover:bg-pink-500"}
                     py-2 pr-4 pl-3 duration-200 border-b
-                     border-gray-100 hover:bg-gray-700
-                      lg:hover:bg-transparent lg:border-0
-                       hover:text-orange-700 lg:p-0 `
+                     border-gray-100 hover:bg-p-700 hover:bg-pink-500 `
                   }
                 >
                   Home
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/location"
+                  className={({ isActive }) =>
+                    ` text-white block 
+                    ${isActive ? "hover:text-white" : " hover:bg-pink-500"}
+                    py-2 pr-4 pl-3 duration-200 border-b
+                     border-gray-100 hover:bg-p-700 hover:bg-pink-500 `
+                  }
+                >
+                  Location
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/campaigns"
+                  className={({ isActive }) =>
+                    ` text-white block 
+                    ${isActive ? "hover:text-white" : " hover:bg-pink-500"}
+                    py-2 pr-4 pl-3 duration-200 border-b
+                     border-gray-100 hover:bg-p-700 hover:bg-pink-500 `
+                  }
+                >
+                  Campaigns
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/screens"
+                  className={({ isActive }) =>
+                    ` text-white block 
+                    ${isActive ? "hover:text-white" : " hover:bg-pink-500"}
+                    py-2 pr-4 pl-3 duration-200 border-b
+                     border-gray-100 hover:bg-p-700 hover:bg-pink-500 `
+                  }
+                >
+                  Screens
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/contact"
+                  className={({ isActive }) =>
+                    ` text-white block 
+                    ${isActive ? "hover:text-white" : " hover:bg-pink-500"}
+                    py-2 pr-4 pl-3 duration-200 border-b
+                     border-gray-100 hover:bg-p-700 hover:bg-pink-500 `
+                  }
+                >
+                  Contact
                 </NavLink>
               </li>
             </ul>
