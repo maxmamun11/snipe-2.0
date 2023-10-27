@@ -1,7 +1,4 @@
-import snipeMedia from "../../../public/media.mp4";
-import backgroundImage from "../../assets/backgroundimg.png";
 import BlogSectionCard from "../Card/Card";
-// import snipeDownwardIcon from "../..assets/downward.svg";
 
 const stats = [
   { id: 1, name: "Screen", value: "100%" },
@@ -13,28 +10,35 @@ export const Home = () => {
   return (
     <>
       <div
-        className="relative flex justify-center text-white bg-gray-900 items -center min-h-screen-col"
-        style={{ backgroundImage: { backgroundImage } }}
+        className="relative flex justify-center mb-10 text-white bg-gray-900 items min-h-screen-col"
+        src="public/backgroundimg.png"
       >
         <video
           className="w-full h-auto "
-          src={snipeMedia}
+          src="media.mp4"
           autoPlay
           playsInline
           loop
         />
-        <div className="absolute text-center transform -translate-x-1/2 translate-y-1/2 top-1/2 left-1/2">
-          <h1 className="mb-8 text-4xl font-bold text-center">
+        <div className="absolute text-center transform -translate-x-1/2 translate-y-1/7 top-1/2 left-1/2">
+          <h1 className="px-6 mb-8 text-4xl font-bold text-center max-auto max-w-7xl lg:px-8">
             Unlock the Power of Out-of-Home Advertising: Explore, Connect, and
             Grow Your Brand with Our OOH Marketplace.
           </h1>
           {/* Button */}
           <button
-            className="px-20 py-3 text-white uppercase rounded-lg bg--500 font-blod"
+            className="px-20 py-3 text-white uppercase rounded-lg bg-500 font-blod"
             style={{ backgroundColor: "#FC1481" }}
           >
             See Our Screens
           </button>
+          <div className="flex justify-center px-20 py-3 mx-3 my-5 ">
+            <img
+              src="/downward.svg"
+              alt="Downward Icon"
+              className="w-20 h-20 cursor-pointer place-items-center"
+            />
+          </div>
           {/* Downward icon below the button */}
           {/* {snipeDownwardIcon} */}
         </div>
@@ -49,13 +53,13 @@ export const Home = () => {
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Repellendus repellat laudantium.
           </p>
-          <div className="py-20 bg-purple-500 sm:py-32">
+          <div className="items-center justify-center py-20 bg-purple-500 border border-solid sm:py-32">
             <div className="px-6 max-auto max-w-7xl lg:px-8">
-              <dl className="grid grid-cols-1 text-center gap-x-8 gap-y-16 lg:grid-cols-3">
+              <dl className="grid justify-center grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-3">
                 {stats.map((stat) => (
                   <div
                     key={stat.id}
-                    className="flex-col max-w-xs mx-auto gap-y-4"
+                    className="flex flex-col max-w-xs border-4 border-solid"
                   >
                     <dt>{stat.name}</dt>
                     <dd>{stat.value}</dd>
@@ -76,7 +80,7 @@ export const Home = () => {
           </p>
         </div>
 
-        <div className="flex gap-10 mx-10 mt-10">
+        <div className="flex gap-10 mx-10 my-10 mt-10 border-4 border-solid ">
           <BlogSectionCard />
           <BlogSectionCard />
           <BlogSectionCard />

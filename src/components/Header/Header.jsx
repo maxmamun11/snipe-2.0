@@ -9,9 +9,6 @@ export default function Header() {
         style={{ backgroundColor: "#0B0121" }}
       >
         <div className="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto">
-          <Link to="/" className="flex items-center">
-            <img src={snipeLogo} className="mr-3 h-1/2" alt="logo" />
-          </Link>
           <div className="flex items-center lg:order-2">
             <Link
               to="#"
@@ -30,7 +27,7 @@ export default function Header() {
             className="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1"
             id="mobile-menu-2"
           >
-            <ul className="flex flex-col font-medium mt4 lg:flex-row lg:space-x-8 lg:mt-0">
+            <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
               <li>
                 <NavLink
                   to="/home"
@@ -56,6 +53,11 @@ export default function Header() {
                 >
                   Location
                 </NavLink>
+              </li>
+              <li>
+                <Link to="/" className="flex items-center">
+                  <img src={snipeLogo} className="mr-3 h-1/2" alt="logo" />
+                </Link>
               </li>
               <li>
                 <NavLink
