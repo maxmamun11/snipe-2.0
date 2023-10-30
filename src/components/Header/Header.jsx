@@ -4,30 +4,45 @@ import snipeLogo from "../../assets/icon.png";
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 shadow">
+      {/* navbar goes here */}
       <nav
-        className="  px-4 lg:px-6 py-2.5"
+        className="w-full flex h-14  px-4 lg:px-6 py-2.5 justify-between md:px-4 items-center"
         style={{ backgroundColor: "#0B0121" }}
       >
         <div className="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto">
-          <div className="flex items-center lg:order-2">
+          <div className="items-center hidden px-2 py-2 lg:order-2 md:block">
             <Link
               to="#"
-              className="text-white hover:bg-white focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none  hover:text-black"
+              className="text-white
+               hover:bg-white focus:ring-4
+                focus:ring-gray-300 
+                font-medium rounded-full 
+                text-sm px-4 lg:px-5 py-2 lg:py-2.5 
+                mr-2 focus:outline-none 
+                 hover:text-black"
             >
               Login
             </Link>
             <Link
               to="#"
-              className="text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none  hover:text-black"
+              className="text-white hover:bg-gray-50 focus:ring-4
+               focus:ring-gray-300 font-medium rounded-full 
+               text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none 
+                hover:text-black"
             >
               Register
             </Link>
+          </div>
+          <div className="md:hidden">
+            <a className="text-4xl" href="#">
+              &#8801;
+            </a>
           </div>
           <div
             className="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1"
             id="mobile-menu-2"
           >
-            <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+            <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 md:flex">
               <li>
                 <NavLink
                   to="/home"
@@ -102,6 +117,7 @@ export default function Header() {
           </div>
         </div>
       </nav>
+      {/* navbar End here */}
     </header>
   );
 }
