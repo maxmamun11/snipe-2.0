@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-// import { TERipple } from "tw-elements-react";
 import avatar from "../../assets/Avatar.png";
 import blogImage from "../../assets/image.png";
 
@@ -11,6 +10,7 @@ export default function BlogSectionCard() {
         <img className="rounded-t-lg" src={blogImage} alt="Bloge Image" />
       </a>
       <div className="p-6">
+        <h1 className="text-sky-400">Article</h1>
         <h5 className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
           Boost Your Conversion rate
         </h5>

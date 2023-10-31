@@ -1,15 +1,13 @@
 import BlogSectionCard from "../Card/Card";
-
-// const stats = [
-//   { id: 1, name: "Screen", value: "100%" },
-//   { id: 2, name: "Viewer per day", value: "24/7" },
-//   { id: 3, name: "Campaign per year", value: "100k" },
-// ];
+import hero from "../../assets/hero.png";
 
 export const Home = () => {
   return (
     <>
-      <div className="relative flex justify-center mb-10 text-white bg-gray-900 items min-h-screen-col">
+      <div
+        className="relative flex justify-center mb-10 text-white bg-indigo-800 bg-center bg-cover items min-h-screen-col "
+        style={{ backgroundImage: `url(${hero})` }}
+      >
         <video
           className="w-full h-auto "
           src="media.mp4"
@@ -22,9 +20,9 @@ export const Home = () => {
             Unlock the Power of Out-of-Home Advertising: Explore, Connect, and
             Grow Your Brand with Our OOH Marketplace.
           </h1>
-          {/* Button */}
+
           <button
-            className="px-20 py-3 text-white uppercase rounded-lg bg-500 font-blod"
+            className="px-20 py-3 text-white uppercase rounded-lg font-blod "
             style={{ backgroundColor: "#FC1481" }}
           >
             See Our Screens
@@ -36,26 +34,21 @@ export const Home = () => {
               className="w-20 h-20 cursor-pointer place-items-center"
             />
           </div>
-          {/* Downward icon below the button */}
-          {/* {snipeDownwardIcon} */}
         </div>
       </div>
-      <section></section>
-      <section>
-        <div className="text-center text-white bg-purple-950">
-          <h1 className="mt-4 text-3xl">
+
+      <section className="">
+        <div className="mt-64 text-center text-white bg-purple-950">
+          <h1 className="py-8 text-3xl font-bold">
             Reach your Customers thanks to the largest network
           </h1>
-          <p>
+          <p className="text-xl">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Repellendus repellat laudantium.
           </p>
-          <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-            <div
-              className="grid grid-cols-2 row-gap-8 md:grid-cols-3 rounded-xl"
-              style={{ backgroundImage: "" }}
-            >
-              <div className="text-center md:border-r">
+          <div className="px-4 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-30 lg:px-8 lg:py-20">
+            <div className="grid grid-cols-2 row-gap-8 md:grid-cols-3 ">
+              <div className="text-center border-4 shadow-md md:border-r rounded-xl ">
                 <h6 className="text-4xl font-bold text-pink-600 lg:text-5xl xl:text-6xl">
                   100%
                 </h6>
@@ -63,7 +56,7 @@ export const Home = () => {
                   Screen
                 </p>
               </div>
-              <div className="text-center md:border-r">
+              <div className="text-center border-4 md:border-r rounded-xl">
                 <h6 className="text-4xl font-bold text-pink-600 lg:text-5xl xl:text-6xl ">
                   24/7
                 </h6>
@@ -71,7 +64,7 @@ export const Home = () => {
                   Viewer per day
                 </p>
               </div>
-              <div className="text-center ">
+              <div className="text-center border-4 rounded-lg ">
                 <h6 className="text-4xl font-bold text-pink-600 lg:text-5xl xl:text-6xl ">
                   100K
                 </h6>
@@ -81,44 +74,35 @@ export const Home = () => {
               </div>
             </div>
           </div>
-
-          {/* <div className="flex justify-center pt-8 pb-8 bg-white ">
-            <div className="flex px-4 py-4 text-3xl text-pink-500 r bg-purple-950 ">
-              {" "}
-              100%
-              <span className="text-xl text-white">
-                <br />
-                Screen
-              </span>
-            </div>
-            <div className="px-4 py-4 text-3xl text-pink-500 bg-purple-950 shrink-7">
-              24/7
-              <span className="text-white">
-                <br />
-                Viewer per day
-              </span>
-            </div>
-            <div className="px-4 py-4 text-3xl text-pink-500 bg-purple-950">
-              100K
-              <span className="text-white">
-                <br />
-                Campaign per year
-              </span>
-            </div>
-          </div> */}
         </div>
       </section>
       <section>
+        <div
+          className="py-64 bg-cover "
+          style={{ backgroundImage: `url(${hero})` }}
+        >
+          <h1 className="text-3xl font-bold text-center text-white">
+            Screen and Network
+          </h1>
+          <p className="text-xl text-center text-white">
+            See the most spectacular locations, screens on the busiest streets
+            and intersections, at train stations or in shopping centres.
+            Millions of the people pass our advertisering media every day.
+          </p>
+        </div>
+      </section>
+      <section className="py-12 mx-4 bg-purple-950">
         <div className="text-center text-white bg-purple-950">
-          <h1 className="text-3xl ">Reviews</h1>
-          <p>
-            Discover our news! The latest special events and social campaigns,
+          <h1 className="text-4xl font-bold ">Reviews</h1>
+          <p className="py-4 text-xl">
+            Discover our news! The latest special events and social campaigns,{" "}
+            <br />
             new screen locations and current news from the life of Screen
             Network
           </p>
         </div>
 
-        <div className="flex gap-10 mx-10 my-10 mt-10 border-4 border-solid ">
+        <div className="flex gap-10 mx-10 my-10 mt-10 border-4 border-solid 50 ">
           <BlogSectionCard />
           <BlogSectionCard />
           <BlogSectionCard />

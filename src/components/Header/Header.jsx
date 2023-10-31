@@ -12,7 +12,7 @@ export default function Header() {
         <div className="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto">
           <div className="items-center hidden px-2 py-2 lg:order-2 md:block">
             <Link
-              to="#"
+              to="https://dash.staging.snipeads.com/"
               className="text-white
                hover:bg-white focus:ring-4
                 focus:ring-gray-300 
