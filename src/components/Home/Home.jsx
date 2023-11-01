@@ -48,15 +48,15 @@ export const Home = () => {
           </p>
           <div className="px-4 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-30 lg:px-8 lg:py-20">
             <div className="grid grid-cols-2 row-gap-8 md:grid-cols-3 ">
-              <div className="text-center border-4 shadow-md md:border-r rounded-xl ">
-                <h6 className="text-4xl font-bold text-pink-600 lg:text-5xl xl:text-6xl">
+              <div className="text-center shadow-3xl md:border-r rounded-xl ">
+                <h6 className="py-2 text-4xl font-bold text-pink-600 lg:text-5xl xl:text-6xl">
                   100%
                 </h6>
                 <p className="text-sm font-medium tracking-widest text-white lg:text-base">
                   Screen
                 </p>
               </div>
-              <div className="text-center border-4 md:border-r rounded-xl">
+              <div className="text-center md:border-r rounded-xl">
                 <h6 className="text-4xl font-bold text-pink-600 lg:text-5xl xl:text-6xl ">
                   24/7
                 </h6>
@@ -64,7 +64,7 @@ export const Home = () => {
                   Viewer per day
                 </p>
               </div>
-              <div className="text-center border-4 rounded-lg ">
+              <div className="text-center rounded-lg ">
                 <h6 className="text-4xl font-bold text-pink-600 lg:text-5xl xl:text-6xl ">
                   100K
                 </h6>
