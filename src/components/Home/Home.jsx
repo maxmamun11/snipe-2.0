@@ -1,5 +1,6 @@
 import BlogSectionCard from "../Card/Card";
 import hero from "../../assets/hero.png";
+import ScreenCards from "../ScreenCards/ScreenCards";
 
 export const Home = () => {
   return (
@@ -89,6 +90,20 @@ export const Home = () => {
             and intersections, at train stations or in shopping centres.
             Millions of the people pass our advertisering media every day.
           </p>
+          <div className="flex flex-wrap gap-5 px-8 py-4 mt-4">
+            <ScreenCards />
+            <ScreenCards />
+            <ScreenCards />
+            <ScreenCards />
+            <ScreenCards />
+            <ScreenCards />
+            <ScreenCards />
+            <ScreenCards />
+            <ScreenCards />
+            <ScreenCards />
+            <ScreenCards />
+            <ScreenCards />
+          </div>
         </div>
       </section>
       <section className="py-12 mx-4 bg-purple-950">
@@ -102,7 +117,7 @@ export const Home = () => {
           </p>
         </div>
 
-        <div className="flex gap-10 mx-10 my-10 mt-10 border-4 border-solid 50 ">
+        <div className="flex justify-center gap-10 mx-10 my-10 mt-10 border-4 border-solid 50">
           <BlogSectionCard />
           <BlogSectionCard />
           <BlogSectionCard />
