@@ -1,6 +1,7 @@
 import FilterCard from "../FilterCard/FilterCard";
 import MyCart from "../MyCart";
 import ScreenCards from "../ScreenCards/ScreenCards";
+import { Pagination } from "../Pagination/Pagination";
 
 export default function Screens() {
   return (
@@ -57,8 +58,10 @@ export default function Screens() {
             <ScreenCards />
           </div>
         </div>
-
-        <div></div>
+      </div>
+      <div className="flex px-10">
+        <span>Total 40 pages</span>
+        <Pagination />
       </div>
     </div>
   );

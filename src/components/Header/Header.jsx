@@ -43,7 +43,7 @@ export default function Header() {
             id="mobile-menu-2"
           >
             <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 md:flex">
-              <li>
+              {/* <li>
                 <NavLink
                   to="/home"
                   className={({ isActive }) =>
@@ -55,7 +55,7 @@ export default function Header() {
                 >
                   Home
                 </NavLink>
-              </li>
+              </li> */}
               <li>
                 <NavLink
                   to="/location"
@@ -70,11 +70,6 @@ export default function Header() {
                 </NavLink>
               </li>
               <li>
-                <Link to="/" className="flex items-center">
-                  <img src={snipeLogo} className="mr-3 h-1/2" alt="logo" />
-                </Link>
-              </li>
-              <li>
                 <NavLink
                   to="/campaigns"
                   className={({ isActive }) =>
@@ -87,6 +82,12 @@ export default function Header() {
                   Campaigns
                 </NavLink>
               </li>
+              <li>
+                <Link to="/home" className="flex items-center">
+                  <img src={snipeLogo} className="mr-3 h-1/2" alt="logo" />
+                </Link>
+              </li>
+
               <li>
                 <NavLink
                   to="/screens"
