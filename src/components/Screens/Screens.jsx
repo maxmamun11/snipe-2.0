@@ -45,7 +45,7 @@ export default function Screens() {
           <div className="flex flex-wrap gap-10 ">
             <FilterCard />
           </div>
-          <div className="flex flex-wrap gap-5 ">
+          <div className="flex flex-wrap">
             <ScreenCards />
             <ScreenCards />
             <ScreenCards />

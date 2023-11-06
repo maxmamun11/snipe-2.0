@@ -2,7 +2,7 @@ import snipeLogo from "../../assets/icon.png";
 
 export default function Footer() {
   return (
-    <footer className="py-6 text-white bg-indigo-950">
+    <footer className="py-6 text-white  bg-indigo-950">
       <div className="container flex flex-wrap mx-auto">
         {/* The  */}
         <div className="w-full mb-4 sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3">

@@ -34,7 +34,7 @@ export default function Header() {
             </Link>
           </div>
           <div className="md:hidden">
-            <a className="text-4xl" href="#">
+            <a className="text-5xl text-white" href="#">
               &#8801;
             </a>
           </div>

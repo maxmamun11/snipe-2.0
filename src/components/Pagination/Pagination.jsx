@@ -30,7 +30,7 @@ export function Pagination() {
     <div className="flex items-center gap-4">
       <Button
         variant="text"
-        className="flex items-center gap-2 rounded-full"
+        className="flex items-center gap-2 rounded-full bg-slate-400"
         onClick={prev}
         disabled={active === 1}
       >
@@ -45,7 +45,7 @@ export function Pagination() {
       </div>
       <Button
         variant="text"
-        className="flex items-center gap-2 rounded-full"
+        className="flex items-center gap-2 rounded-full bg-slate-400 "
         onClick={next}
         disabled={active === 5}
       >
