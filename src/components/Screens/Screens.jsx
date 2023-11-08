@@ -12,7 +12,7 @@ export default function Screens() {
       </div>
       <div className="px-8 py-4 text-black rounded-lg bg-[#F6F6F6] ml-8 mr-8">
         <h1 className="px-2 py-2 text-xl">Screens</h1>
-        <div className="flex gap-6 px-3 pt-4 pb-6 shadow-slate-500 ">
+        <div className="hidden gap-6 px-3 pt-4 pb-6 md:flex shadow-slate-500 ">
           <span className="px-3 bg-white border cursor-pointer border-x-cyan-50 text-zinc-400">
             New
           </span>

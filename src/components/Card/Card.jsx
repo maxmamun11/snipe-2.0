@@ -5,27 +5,38 @@ import blogImage from "../../assets/image.png";
 
 export default function BlogSectionCard() {
   return (
-    <div className="block rounded-lg bg-white lg:bg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-      <a href="#!">
-        <img
-          className="rounded-t-lg lg:h-[192px]"
-          src={blogImage}
-          alt="Bloge Image"
-        />
-      </a>
-      <div className="p-6">
-        <h1 className="text-sky-400">Article</h1>
-        <h5 className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-          Boost Your Conversion rate
-        </h5>
-        <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-          accusantium praesentium eius, ut atque fuga culpa, similique sequi cum
-          eos quis dolorum.
-        </p>
-        <h1>Roel Aufderehar</h1>
-        <img className="w-10 h-10 rounded-full" src={avatar} alt="avatar"></img>
+    //  Blog section start here
+    <div className="inline-flex flex-col items-start justify-center pr-px bg-white rounded-lg shadow w-96 h-96">
+      <img className="relative h-48 w-96 rounded-t-xl" src={blogImage} alt="" />
+      <div className="inline-flex flex-col items-start justify-center gap-20 p-6 bg-white rounded-b-lg w-96 h-80">
+        <div className="inline-flex flex-col self-stretch justify-start h-40 gap-2">
+          <div className="self-stretch text-indigo-600 text-sm font-medium font-['Inter'] leading-tight">
+            Article
+          </div>
+          <div className="flex flex-col items-start self-stretch justify-start h-32 gap-3">
+            <div className="self-stretch text-gray-900 text-xl font-semibold font-['Inter'] leading-7">
+              Boost your Conversion rate
+            </div>
+            <div className="self-stretch text-gray-500 text-base font-normal font-['Inter'] leading-normal">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Architecto accusantium praesentium eius, ut atque fuga culpa,
+              similique sequi cum eos quis dolorum.
+            </div>
+          </div>
+        </div>
+        <div className="inline-flex items-start justify-start gap-3 ">
+          <img className="w-10 h-10 rounded-2xl" src={avatar} alt="" />
+          <div className="inline-flex flex-col items-start justify-start">
+            <div className="text-gray-900 text-sm font-medium font-['Inter'] leading-tight">
+              Roel Aufderehar
+            </div>
+            <div className="text-gray-500 text-sm font-normal font-['Inter'] leading-tight">
+              Mar 16, 2023 . 6 min read
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    //  Blog section end here
   );
 }

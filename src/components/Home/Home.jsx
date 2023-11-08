@@ -1,6 +1,6 @@
 import BlogSectionCard from "../Card/Card";
 import hero from "../../assets/hero.png";
-import ScreenCards from "../ScreenCards/ScreenCards";
+// import ScreenCards from "../ScreenCards/ScreenCards";
 
 export const Home = () => {
   return (
@@ -77,50 +77,40 @@ export const Home = () => {
           </div>
         </div>
       </div>
-      <section>
-        <div
-          className="py-10 bg-cover "
-          style={{ backgroundImage: `url(${hero})` }}
-        >
-          <h1 className="text-3xl font-bold text-center text-white">
-            Screen and Network
-          </h1>
-          <p className="text-xl text-center text-white">
-            See the most spectacular locations, screens on the busiest streets
-            and intersections, at train stations <br /> or in shopping centres.
-            Millions of the people pass our advertisering media every day.
-          </p>
-          <div className="flex flex-wrap justify-center gap-5 px-8 py-4 mt-4">
-            <ScreenCards />
-            <ScreenCards />
-            <ScreenCards />
-            <ScreenCards />
-            <ScreenCards />
-            <ScreenCards />
-            <ScreenCards />
-            <ScreenCards />
-            <ScreenCards />
-            <ScreenCards />
-            <ScreenCards />
-            <ScreenCards />
-          </div>
-        </div>
-      </section>
-      <section className="py-12 mx-4 bg-purple-950">
-        <div className="text-center text-white bg-purple-950">
-          <h1 className="text-4xl font-bold ">Reviews</h1>
-          <p className="py-4 text-xl">
-            Discover our news! The latest special events and social campaigns,{" "}
-            <br />
-            new screen locations and current news from the life of Screen
-            Network
-          </p>
-        </div>
 
-        <div className="flex justify-center gap-10 mx-10 my-10 mt-10 border-4 border-solid 50">
-          <BlogSectionCard />
-          <BlogSectionCard />
-          <BlogSectionCard />
+      <div
+        className="py-10 bg-cover "
+        style={{ backgroundImage: `url(${hero})` }}
+      >
+        <h1 className="text-3xl font-bold text-center text-white">
+          Screen and Network
+        </h1>
+        <p className="text-xl text-center text-white">
+          See the most spectacular locations, screens on the busiest streets and
+          intersections, at train stations <br /> or in shopping centres.
+          Millions of the people pass our advertisering media every day.
+        </p>
+      </div>
+
+      <section className="px-10 py-10">
+        <div className="flex flex-col mb-10">
+          <div className="flex flex-col items-center justify-start gap-12 h-96 bg-indigo-950">
+            <div className="flex flex-col items-center self-stretch justify-start gap-4 h-28">
+              <div className="self-stretch text-center text-white text-4xl font-extrabold font-['Inter'] leading-10 ">
+                Reviews
+              </div>
+              <div className="w-96 text-center text-white text-xl font-normal font-['Inter'] leading-7">
+                Discover our news! The latest special events and social
+                campaigns, new screen locations and current news from the life
+                of Screen Network
+              </div>
+              <div className="flex flex-col mx-4 md:flex md:flex-row">
+                <BlogSectionCard />
+                <BlogSectionCard />
+                <BlogSectionCard />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>
